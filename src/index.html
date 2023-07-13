@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Eine Beschreibung Ihrer Website">
+  <meta name="keywords" content="Einige,Schlüsselwörter,für,Ihre,Website">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="icon.svg">
   <link rel="stylesheet" href="styles.css">
   <title>Arztpraxis</title>
 </head>
 <body>
     <div class="header">
         <div class="logo">
-            <h1>Logo der Praxis</h1>
+            <img src="icon.svg" alt="Logo der Praxis" loading="lazy">
         </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
@@ -20,14 +23,14 @@
             <li><a href="#contact">Kontakt</a></li>
         </ul>
         <div class="phone-number">
-            <a href="tel:+1234567890">+123 456 7890</a>
+            <a href="tel:+43 05578 74265">05578 74265</a>
         </div>
     </div>
 
     <div id="home" class="welcome">
         <h1>Willkommen in der Praxis</h1>
         <div class="phone-number">
-            <a href="tel:+1234567890">+123 456 7890</a>
+            <a href="tel:+43 05578 74265">05578 74265</a>
         </div>
     </div>
     <div class="container">
@@ -54,12 +57,22 @@
                 <button type="submit">Termin vereinbaren</button>
             </form>
         </div>
-
-        <div class="opening-hours">
+        <section class="openinghours">
+        <div class="openinghourscontent section">
+            <div class="header">
             <h2>Öffnungszeiten</h2>
-            <p>Montag - Freitag: 9:00 - 17:00</p>
-            <p>Samstag - Sonntag: Geschlossen</p>
+
+            <table class="opening-hours-table"></table>
+            <br>Montag 08:30 - 12:00 13:00 - 18:30
+            <br>Dienstag 13:00 - 18:30 08:30 - 12:00
+            <br>Mittwoch 13:00 - 18:30 08:30 - 12:00
+            <br>Donnerstag 13:00 - 18:30 08:30 - 12:00
+            <br>Freitag 08:30 - 13:00
+            <br>Samstag Geschlossen
+            <br>Sonntag Geschlossen
+            </div>
         </div>
+        </section>
     </div>
 
     <div id="about" class="about-us">
@@ -88,17 +101,20 @@
 
             <div class="contact-info-item">
                 <h3>Adresse</h3>
-                <p>Praxisadresse</p>
+                <p>Zahnarzt Dr. Magomed Aydiev</p>
+
+                <p>Herrenfeld 2<br>6972 Fußach</p>
+                
             </div>
 
             <div class="contact-info-item">
                 <h3>Telefonnummer</h3>
-                <p><a href="tel:+1234567890">+123 456 7890</a></p>
+                <p><a href="tel:+43 5578 74265">05578 74265</a></p>
             </div>
 
             <div class="contact-info-item">
                 <h3>Email</h3>
-                <p><a href="mailto:info@praxis.de">info@praxis.de</a></p>
+                <p><a href="mailto:aydiev.magomed@gmx.at">aydiev.magomed@gmx.at</a></p>
             </div>
         </div>
 

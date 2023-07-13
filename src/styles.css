@@ -90,4 +90,47 @@
         font-size: 14px;
         }
         }
+
+        .openinghours {
+            font-family:Lucida Console;
+            border-radius:4px;
+            margin:10px;
+            box-shadow: 0 0 10px black;
+            padding:0 10px 0 10px;
+            overflow: hidden;
+            display: inline-block;
+        }
+        .openinghourscontent {
+            float:left;
+        }
+        .openinghourscontent h2 {
+            display:block;
+            text-align:center;
+            margin-top:.33em;
+        }
+        .openinghourscontent button {
+            color:white;
+            font-family:Courier New;
+            font-size:large;
+            font-weight:bolder;
+            background-color:#4679BD;
+            border-radius:4px;
+            width:100%;
+            margin-bottom:10px;
+        }
+        .today {
+            color: #8AC007;
+        }
+        .opening-hours-table tr td:first-child {
+            font-weight:bold;
+        }
+
+        .opening-hours-table tr td {
+            padding:5px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
 }
