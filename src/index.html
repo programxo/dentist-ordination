@@ -7,9 +7,8 @@
     <meta name="keywords" content="Einige,Schlüsselwörter,für,Ihre,Website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/icon.ico">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    
     <title>Arztpraxis</title>
 </head>
 
@@ -34,11 +33,100 @@
         </div>
     </nav>
 
-    <!-- Other sections go here -->
+    <div id="home" class="jumbotron text-center">
+        <h1 class="display-4">Willkommen in der Praxis</h1>
+        <p class="lead"><a href="tel:+43 05578 74265" class="btn btn-primary btn-lg">Rufen Sie uns an: 05578 74265</a></p>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="mb-3">Termin vereinbaren</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="service">Service-Auswahl:</label>
+                        <select id="service" name="service" class="form-control">
+                            <option value="cleaning">Zahnreinigung</option>
+                            <option value="filling">Füllung</option>
+                            <option value="whitening">Bleaching</option>
+                            <!-- Weitere Dienstleistungen hier hinzufügen -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Vorname und Nachname:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefonnummer:</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email (optional):</label>
+                        <input type="email" id="email" name="email" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Termin vereinbaren</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2 class="mb-3">Öffnungszeiten</h2>
+                <table class="table">
+                    <tbody>
+                        <tr><td>Montag</td><td>08:30 - 12:00</td><td>13:00 - 18:30</td></tr>
+                        <tr><td>Dienstag</td><td>08:30 - 12:00</td><td>13:00 - 18:30</td></tr>
+                        <tr><td>Mittwoch</td><td>08:30 - 12:00</td><td>13:00 - 18:30</td></tr>
+                        <tr><td>Donnerstag</td><td>08:30 - 12:00</td><td>13:00 - 18:30</td></tr>
+                        <tr><td>Freitag</td><td>08:30 - 13:00</td><td>Geschlossen</td></tr>
+                        <tr><td>Samstag</td><td colspan="2">Geschlossen</td></tr>
+                        <tr><td>Sonntag</td><td colspan="2">Geschlossen</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
-    <footer class="footer bg-dark text-white text-center p-3">
-        <p>Zahnarztpraxis Dr. Magomed Aydiev &copy; 2023. <a href="#privacy-policy" class="text-white">Privacy
-                Policy</a></p>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Kontaktinformationen</h2>
+    
+                <div class="contact-info-item mb-3">
+                    <h3>Adresse</h3>
+                    <p class="mb-0">Zahnarzt Dr. Magomed Aydiev</p>
+                    <p>Herrenfeld 2<br>6972 Fußach</p>
+                </div>
+    
+                <div class="contact-info-item mb-3">
+                    <h3>Telefonnummer</h3>
+                    <p><a href="tel:+43 5578 74265">05578 74265</a></p>
+                </div>
+    
+                <div class="contact-info-item mb-3">
+                    <h3>Email</h3>
+                    <p><a href="mailto:aydiev.magomed@gmx.at">aydiev.magomed@gmx.at</a></p>
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <h2>Nachricht senden</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="message-email">Ihre Email:</label>
+                        <input type="email" id="message-email" name="email" class="form-control" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="message-text">Ihre Nachricht:</label>
+                        <textarea id="message-text" name="message" class="form-control" required></textarea>
+                    </div>
+    
+                    <button type="submit" class="btn btn-primary mt-2">Senden</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer bg-dark text-white text-center p-3 mt-5">
+        <p>Zahnarztpraxis Dr. Magomed Aydiev &copy; 2023. <a href="#privacy-policy" class="text-white">Privacy Policy</a></p>
         <p>Folgen Sie uns auf <a href="#" class="text-white">Sozialen Medien</a>.</p>
     </footer>
 
