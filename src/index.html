@@ -3,29 +3,48 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Eine Beschreibung Ihrer Website">
-  <meta name="keywords" content="Einige,Schlüsselwörter,für,Ihre,Website">
+  <meta name="description" content="Zahnarzt Ordination Aydiev Magomed">
+  <meta name="keywords" content="Zahnarzt, Ordination, Aydiev, Magomed">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="icon.ico">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/icon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
   <title>Arztpraxis</title>
 </head>
 <body>
-    <div class="header">
-        <div class="logo">
-            <img src="icon.ico" alt="Logo der Praxis" loading="lazy">
+     <!-- Navbar Start -->
+     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>Zahnarzt Aydiev</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Service</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="price.html" class="dropdown-item">Pricing Plan</a>
+                        <a href="team.html" class="dropdown-item">Our Dentist</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="appointment.html" class="dropdown-item">Appointment</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <div class="phone-number">
+                    <a href="tel:+43 05578 74265">05578 74265</a>
+                </div>
+            </div>
+            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
+            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
         </div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Über uns</a></li>
-            <li><a href="#services">Dienstleistungen</a></li>
-            <li><a href="#reviews">Bewertungen</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
-        <div class="phone-number">
-            <a href="tel:+43 05578 74265">05578 74265</a>
-        </div>
-    </div>
+    </nav>
+    <!-- Navbar End -->
 
     <div id="home" class="welcome">
         <h1>Willkommen in der Praxis</h1>
