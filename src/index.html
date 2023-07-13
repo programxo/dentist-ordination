@@ -5,13 +5,121 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+  <title>Arztpraxis</title>
 </head>
-
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
+    <div class="header">
+        <div class="logo">
+            <h1>Logo der Praxis</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Über uns</a></li>
+            <li><a href="#services">Dienstleistungen</a></li>
+            <li><a href="#reviews">Bewertungen</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+        <div class="phone-number">
+            <a href="tel:+1234567890">+123 456 7890</a>
+        </div>
+    </div>
+
+    <div id="home" class="welcome">
+        <h1>Willkommen in der Praxis</h1>
+        <div class="phone-number">
+            <a href="tel:+1234567890">+123 456 7890</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="appointment-form">
+            <h2>Termin vereinbaren</h2>
+            <form>
+                <label for="service">Service-Auswahl:</label>
+                <select id="service" name="service">
+                    <option value="cleaning">Zahnreinigung</option>
+                    <option value="filling">Füllung</option>
+                    <option value="whitening">Bleaching</option>
+                    <!-- Weitere Dienstleistungen hier hinzufügen -->
+                </select>
+
+                <label for="name">Vorname und Nachname:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Telefonnummer:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email (optional):</label>
+                <input type="email" id="email" name="email">
+
+                <button type="submit">Termin vereinbaren</button>
+            </form>
+        </div>
+
+        <div class="opening-hours">
+            <h2>Öffnungszeiten</h2>
+            <p>Montag - Freitag: 9:00 - 17:00</p>
+            <p>Samstag - Sonntag: Geschlossen</p>
+        </div>
+    </div>
+
+    <div id="about" class="about-us">
+        <h2>Über uns</h2>
+        <p>Hier kann eine kurze Beschreibung der Praxis stehen, zusammen mit einem Foto des Arztes.</p>
+    </div>
+
+    <div id="services" class="services">
+        <h2>Unsere Dienstleistungen</h2>
+        <p>Hier können Sie detailliertere Informationen zu den einzelnen Dienstleistungen, die Ihre Praxis anbietet, hinzufügen.</p>
+    </div>
+    <div id="reviews" class="reviews">
+        <h2>Was unsere Patienten sagen</h2>
+
+        <div class="reviews-item">
+            <h3>Patientenname</h3>
+            <p>Hier steht eine Bewertung des Patienten.</p>
+        </div>
+
+        <!-- Weitere Bewertungen hier hinzufügen -->
+    </div>
+
+    <div class="container">
+        <div class="contact-info">
+            <h2>Kontaktinformationen</h2>
+
+            <div class="contact-info-item">
+                <h3>Adresse</h3>
+                <p>Praxisadresse</p>
+            </div>
+
+            <div class="contact-info-item">
+                <h3>Telefonnummer</h3>
+                <p><a href="tel:+1234567890">+123 456 7890</a></p>
+            </div>
+
+            <div class="contact-info-item">
+                <h3>Email</h3>
+                <p><a href="mailto:info@praxis.de">info@praxis.de</a></p>
+            </div>
+        </div>
+
+        <div class="message-form">
+            <h2>Nachricht senden</h2>
+            <form>
+                <label for="message-email">Ihre Email:</label>
+                <input type="email" id="message-email" name="email" required>
+
+                <label for="message-text">Ihre Nachricht:</label>
+                <textarea id="message-text" name="message" required></textarea>
+
+                <button type="submit">Senden</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Zahnordination &copy; 2023. <a href="#privacy-policy">Privacy Policy</a></p>
+        <p>Folgen Sie uns auf <a href="#">Sozialen Medien</a>.</p>
+    </div>
 </body>
 
 </html>

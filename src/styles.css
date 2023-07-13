@@ -1,21 +1,93 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-html, body {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  background-color: #fff;
-}
+        * {
+            box-sizing: border-box;
+        }
 
-main {
-  margin: auto;
-  width: 50%;
-  padding: 20px;
-}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-main > h1 {
-  text-align: center;
-  font-size: 3.5em;
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        .logo {
+            font-size: 1.5em;
+        }
+
+        .nav-links {
+            list-style-type: none;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .welcome {
+            text-align: center;
+            padding: 50px;
+            background-image: url('willkommen.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .phone-number {
+            text-align: right;
+        }
+        .reviews, .contact-info, .message-form {
+            padding: 20px;
+        }
+
+        .reviews-item, .contact-info-item {
+            margin-bottom: 20px;
+        }
+
+        .message-form input, .message-form textarea, .message-form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .item {
+            flex: 1 0 21%; /* wachsen, schrumpfen, Basis */
+            margin: 1%; /* um gleichmäßige Ränder zu schaffen */
+            padding: 10px;
+        }
+
+        /* CSS für große Bildschirme (Desktops, Laptops) */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .appointment-form, .opening-hours, .contact-info, .message-form {
+            width: 45%;
+            margin: 2%;
+        }
+
+        /* CSS für kleine Bildschirme (Tablets, Handys) */
+        @media (max-width: 768px) {
+        .appointment-form, .opening-hours, .contact-info, .message-form {
+            width: 100%;
+        }
+
+        /* CSS für große Bildschirme (Desktops, Laptops) */
+        body {
+            font-size: 16px;
+        }
+
+        /* CSS für kleine Bildschirme (Tablets, Handys) */
+        @media (max-width: 768px) {
+        body {
+        font-size: 14px;
+        }
+        }
 }
