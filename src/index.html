@@ -2,159 +2,49 @@
 <html lang="de">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Zahnarzt Ordination Aydiev Magomed">
-  <meta name="keywords" content="Zahnarzt, Ordination, Aydiev, Magomed">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="img/icon.ico">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-
-  <title>Arztpraxis</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Eine Beschreibung Ihrer Website">
+    <meta name="keywords" content="Einige,Schlüsselwörter,für,Ihre,Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <title>Arztpraxis</title>
 </head>
+
 <body>
-     <!-- Navbar Start -->
-     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
-        <a href="index.html" class="navbar-brand p-0">
-            <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>Zahnarzt Aydiev</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="img/icon.ico" alt="Logo der Praxis" loading="lazy" style="height: 30px;">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Service</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="price.html" class="dropdown-item">Pricing Plan</a>
-                        <a href="team.html" class="dropdown-item">Our Dentist</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="appointment.html" class="dropdown-item">Appointment</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
-                <div class="phone-number">
-                    <a href="tel:+43 05578 74265">05578 74265</a>
-                </div>
-            </div>
-            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
-            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Über uns</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Dienstleistungen</a></li>
+                <li class="nav-item"><a class="nav-link" href="#reviews">Bewertungen</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+            </ul>
+            <span class="navbar-text"><a href="tel:+43 05578 74265">05578 74265</a></span>
         </div>
     </nav>
-    <!-- Navbar End -->
 
-    <div id="home" class="welcome">
-        <h1>Willkommen in der Praxis</h1>
-        <div class="phone-number">
-            <a href="tel:+43 05578 74265">05578 74265</a>
-        </div>
-    </div>
-    <div class="container">
-        <div class="appointment-form">
-            <h2>Termin vereinbaren</h2>
-            <form>
-                <label for="service">Service-Auswahl:</label>
-                <select id="service" name="service">
-                    <option value="cleaning">Zahnreinigung</option>
-                    <option value="filling">Füllung</option>
-                    <option value="whitening">Bleaching</option>
-                    <!-- Weitere Dienstleistungen hier hinzufügen -->
-                </select>
+    <!-- Other sections go here -->
 
-                <label for="name">Vorname und Nachname:</label>
-                <input type="text" id="name" name="name" required>
+    <footer class="footer bg-dark text-white text-center p-3">
+        <p>Zahnarztpraxis Dr. Magomed Aydiev &copy; 2023. <a href="#privacy-policy" class="text-white">Privacy
+                Policy</a></p>
+        <p>Folgen Sie uns auf <a href="#" class="text-white">Sozialen Medien</a>.</p>
+    </footer>
 
-                <label for="phone">Telefonnummer:</label>
-                <input type="tel" id="phone" name="phone" required>
-
-                <label for="email">Email (optional):</label>
-                <input type="email" id="email" name="email">
-
-                <button type="submit">Termin vereinbaren</button>
-            </form>
-        </div>
-        <section class="openinghours">
-        <div class="openinghourscontent section">
-            <div class="header">
-            <h2>Öffnungszeiten</h2>
-
-            <table class="opening-hours-table"></table>
-            <br>Montag 08:30 - 12:00 13:00 - 18:30
-            <br>Dienstag 13:00 - 18:30 08:30 - 12:00
-            <br>Mittwoch 13:00 - 18:30 08:30 - 12:00
-            <br>Donnerstag 13:00 - 18:30 08:30 - 12:00
-            <br>Freitag 08:30 - 13:00
-            <br>Samstag Geschlossen
-            <br>Sonntag Geschlossen
-            </div>
-        </div>
-        </section>
-    </div>
-
-    <div id="about" class="about-us">
-        <h2>Über uns</h2>
-        <p>Hier kann eine kurze Beschreibung der Praxis stehen, zusammen mit einem Foto des Arztes.</p>
-    </div>
-
-    <div id="services" class="services">
-        <h2>Unsere Dienstleistungen</h2>
-        <p>Hier können Sie detailliertere Informationen zu den einzelnen Dienstleistungen, die Ihre Praxis anbietet, hinzufügen.</p>
-    </div>
-    <div id="reviews" class="reviews">
-        <h2>Was unsere Patienten sagen</h2>
-
-        <div class="reviews-item">
-            <h3>Patientenname</h3>
-            <p>Hier steht eine Bewertung des Patienten.</p>
-        </div>
-
-        <!-- Weitere Bewertungen hier hinzufügen -->
-    </div>
-
-    <div class="container">
-        <div class="contact-info">
-            <h2>Kontaktinformationen</h2>
-
-            <div class="contact-info-item">
-                <h3>Adresse</h3>
-                <p>Zahnarzt Dr. Magomed Aydiev</p>
-
-                <p>Herrenfeld 2<br>6972 Fußach</p>
-                
-            </div>
-
-            <div class="contact-info-item">
-                <h3>Telefonnummer</h3>
-                <p><a href="tel:+43 5578 74265">05578 74265</a></p>
-            </div>
-
-            <div class="contact-info-item">
-                <h3>Email</h3>
-                <p><a href="mailto:aydiev.magomed@gmx.at">aydiev.magomed@gmx.at</a></p>
-            </div>
-        </div>
-
-        <div class="message-form">
-            <h2>Nachricht senden</h2>
-            <form>
-                <label for="message-email">Ihre Email:</label>
-                <input type="email" id="message-email" name="email" required>
-
-                <label for="message-text">Ihre Nachricht:</label>
-                <textarea id="message-text" name="message" required></textarea>
-
-                <button type="submit">Senden</button>
-            </form>
-        </div>
-    </div>
-
-    <div class="footer">
-        <p>Zahnarztpraxis Dr. Magomed Aydiev &copy; 2023. <a href="#privacy-policy">Privacy Policy</a></p>
-        <p>Folgen Sie uns auf <a href="#">Sozialen Medien</a>.</p>
-    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
