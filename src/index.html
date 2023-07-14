@@ -6,6 +6,9 @@
     <meta name="description" content="Eine Beschreibung Ihrer Website">
     <meta name="keywords" content="Einige,Schlüsselwörter,für,Ihre,Website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Ihr Seitentitel" />
+    <meta property="og:description" content="Eine kurze Beschreibung Ihrer Website" />
+    <meta property="og:image" content="URL zu einem Vorschaubild für Ihre Website" />
     <link rel="icon" href="img/icon.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -13,126 +16,130 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="img/icon.ico" alt="Logo der Praxis" loading="lazy" style="height: 30px;">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">Über uns</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Dienstleistungen</a></li>
-                <li class="nav-item"><a class="nav-link" href="#reviews">Bewertungen</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
-            </ul>
-            <span class="navbar-text"><a href="tel:+43 05578 74265">05578 74265</a></span>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#" aria-label="Home">
+                <img src="img/icon.ico" alt="Logo der Praxis" loading="lazy" style="height: 30px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Über uns</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Dienstleistungen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Bewertungen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                </ul>
+                <span class="navbar-text"><a href="tel:+43 05578 74265" rel="noopener noreferrer">05578 74265</a></span>
+            </div>
+        </nav>
+    </header>
 
-    <div id="home" class="jumbotron text-center">
-        <h1 class="display-4">Willkommen in der Praxis</h1>
-        <p class="lead"><a href="tel:+43 05578 74265" class="btn btn-primary btn-lg">Rufen Sie uns an: 05578 74265</a></p>
-    </div>
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h2 class="mb-3">Termin vereinbaren</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="service">Service-Auswahl:</label>
-                        <select id="service" name="service" class="form-control">
-                            <option value="cleaning">Zahnreinigung</option>
-                            <option value="filling">Füllung</option>
-                            <option value="whitening">Bleaching</option>
-                            <!-- Weitere Dienstleistungen hier hinzufügen -->
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="name">Vorname und Nachname:</label>
-                        <input type="text" id="name" name="name" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Telefonnummer:</label>
-                        <input type="tel" id="phone" name="phone" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email (optional):</label>
-                        <input type="email" id="email" name="email" class="form-control">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Termin vereinbaren</button>
-                </form>
-            </div>
-            <div class="col-md-6">
-                <h2 class="mb-3">Öffnungszeiten</h2>
-                <table class="table">
-                    <tbody>
-                        <tr><td>Montag</td><td>08:30 - 12:00</td><td>13:00 - 18:30</td></tr>
-                        <tr><td>Dienstag</td><td>08:30 - 12:00</td><td>13:00 - 18:30</td></tr>
-                        <tr><td>Mittwoch</td><td>08:30 - 12:00</td><td>13:00 - 18:30</td></tr>
-                        <tr><td>Donnerstag</td><td>08:30 - 12:00</td><td>13:00 - 18:30</td></tr>
-                        <tr><td>Freitag</td><td>08:30 - 13:00</td><td>Geschlossen</td></tr>
-                        <tr><td>Samstag</td><td colspan="2">Geschlossen</td></tr>
-                        <tr><td>Sonntag</td><td colspan="2">Geschlossen</td></tr>
-                    </tbody>
-                </table>
+    <main>
+        <div id="home" class="jumbotron text-center">
+            <h1 class="display-4">Willkommen in der Praxis</h1>
+            <p class="lead"><a href="tel:+43 05578 74265" class="btn btn-primary btn-lg" rel="noopener noreferrer">Rufen Sie uns an: 05578 74265</a></p>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="mb-3">Termin vereinbaren</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="service">Service-Auswahl:</label>
+                            <select id="service" name="service" class="form-control">
+                                <option value="cleaning">Zahnreinigung</option>
+                                <option value="filling">Füllung</option>
+                                <option value="whitening">Bleaching</option>
+                                <!-- Weitere Dienstleistungen hier hinzufügen -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Vorname und Nachname:</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefonnummer:</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email (optional):</label>
+                            <input type="email" id="email" name="email" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Termin vereinbaren</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-3">Öffnungszeiten</h2>
+                    <table class="table">
+                        <tbody>
+                            <tr><td>Montag</td><td>08:30 - 12:00</td><td>13:00 - 18:30</td></tr>
+                            <tr><td>Dienstag</td><td>08:30 - 12:00</td><td>13:00 - 18:30</td></tr>
+                            <tr><td>Mittwoch</td><td>08:30 - 12:00</td><td>13:00 - 18:30</td></tr>
+                            <tr><td>Donnerstag</td><td>08:30 - 12:00</td><td>13:00 - 18:30</td></tr>
+                            <tr><td>Freitag</td><td>08:30 - 13:00</td><td>Geschlossen</td></tr>
+                            <tr><td>Samstag</td><td colspan="2">Geschlossen</td></tr>
+                            <tr><td>Sonntag</td><td colspan="2">Geschlossen</td></tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-    </div>
+    
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="mb-3">Kontakt</h2>
+                    <p>Arztpraxis Dr. Aydiev Magomed<br>Herrenfeld 2
+                        <br>6972 Fußach</p>
+                    <p><a href="tel:+43 5578 74265" rel="noopener noreferrer">05578 74265</a></p>
+                    <p><a href="mailto:aydiev.magomed@gmx.at" rel="noopener noreferrer">aydiev.magomed@gmx.at</a></p>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-3">Lage</h2>
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="100%" height="500" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=Herrenfeld%2%20Fussach&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Kontaktinformationen</h2>
-    
-                <div class="contact-info-item mb-3">
-                    <h3>Adresse</h3>
-                    <p class="mb-0">Zahnarzt Dr. Magomed Aydiev</p>
-                    <p>Herrenfeld 2<br>6972 Fußach</p>
-                </div>
-    
-                <div class="contact-info-item mb-3">
-                    <h3>Telefonnummer</h3>
-                    <p><a href="tel:+43 5578 74265">05578 74265</a></p>
-                </div>
-    
-                <div class="contact-info-item mb-3">
-                    <h3>Email</h3>
-                    <p><a href="mailto:aydiev.magomed@gmx.at">aydiev.magomed@gmx.at</a></p>
-                </div>
-            </div>
-    
-            <div class="col-md-6">
-                <h2>Nachricht senden</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="message-email">Ihre Email:</label>
-                        <input type="email" id="message-email" name="email" class="form-control" required>
-                    </div>
-    
-                    <div class="form-group">
-                        <label for="message-text">Ihre Nachricht:</label>
-                        <textarea id="message-text" name="message" class="form-control" required></textarea>
-                    </div>
-    
-                    <button type="submit" class="btn btn-primary mt-2">Senden</button>
-                </form>
-            </div>
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span class="text-muted">© 2023 Arztpraxis Muster. Alle Rechte vorbehalten.</span>
         </div>
-    </div>
-    
-    <footer class="footer bg-dark text-white text-center p-3 mt-5">
-        <p>Zahnarztpraxis Dr. Magomed Aydiev &copy; 2023. <a href="#privacy-policy" class="text-white">Privacy Policy</a></p>
-        <p>Folgen Sie uns auf <a href="#" class="text-white">Sozialen Medien</a>.</p>
     </footer>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Nach oben</button>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        //Script für die "Nach oben" Schaltfläche
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 </html>
