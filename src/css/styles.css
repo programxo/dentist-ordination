@@ -29,6 +29,15 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
+.bordered-section {
+  border: 2px solid #000; /* Ändern Sie die Farbe nach Ihren Wünschen */
+  padding: 10px;
+  margin: 10px 0; /* Fügt oberen und unteren Rand hinzu */
+  box-sizing: border-box; /* Stellt sicher, dass die Polsterung und der Rand die Breite des Elements nicht verändern */
+  height: 400px;
+}
+
+
 /* Stil für das Logo im Header */
 .header .logo {
   font-size: 2rem;
