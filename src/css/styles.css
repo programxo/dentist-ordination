@@ -1,20 +1,89 @@
+/* Allgemeine Stile und Standard Schriftfamilie */
 body {
-    font-family: Arial, sans-serif;
+  font-family: Calibri, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333; /* dunkelgrau */
+  background-color: #f0f0f0; /* hellgrau */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Calibri', serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.cta-button {
+  background-color: #008CBA; /* blau */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Stil für das Logo im Header */
+.header .logo {
+  font-size: 2rem;
+}
+
+/* Stil für die Telefonnummer */
+.phone-number {
+  font-size: 1.5rem;
+}
+
+/* Stil für Navigationslinks */
+.nav-link {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+/* Stil für den Footer-Text */
+.footer {
+  font-size: 1rem;
+}
+
+/* Formular-Stile */
+.form-group {
+  margin-bottom: 20px;
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+}
+
+/* Stil für den Jumbotron */
+.jumbotron {
+  margin-bottom: 20px;
+}
+
+/* Oberer Rand (margin-top) für die Container */
+.mt-5 {
+  margin-top: 50px !important;
+}
+
+/* Media queries für verschiedene Bildschirmgrößen */
+@media (max-width: 600px) {
+  .nav-link, .phone-number {
+      font-size: 1rem;
   }
-  
-  .header .logo {
-    font-size: 2rem;
-  }
-  
-  .phone-number {
-    font-size: 1.5rem;
-  }
-  
-  .nav-link {
-    font-size: 1.2rem;
-  }
-  
-  .footer {
-    font-size: 1rem;
-  }
-  
+}
+
+/* Farbschema */
+:root {
+  --main-color: #008cba;
+  --secondary-color: #f5f5f5;
+}
+
+/* Anwendung des Farbschemas */
+body {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
